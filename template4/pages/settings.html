@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Settings</title>
+</head>
+<body>
+    <div class="page">
+        <div class="sidebar">
+            <div class="logo">
+                <h3>Maher</h3>
+                <div class="separator"></div>
+            </div>
+            <div class="pages-links">
+                <ul>
+                    <li class="page-link">
+                        <a href="../index.html">
+                            <i class="fa-solid fa-sliders"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="page-link checked">
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="profile.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="projects.html">
+                            <i class="fa-solid fa-bars-progress"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="courses.html">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="friends.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="plans.html">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="search rounded-border">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Type A Keyword">
+                </div>
+                <div class="status">
+                    <i class="fa-regular fa-bell"><span class="notify"></span></i>
+                    <img src="../images/avatar.png" alt="">
+                </div>
+            </div>
+            <div class="body">
+                <div class="section-title">
+                    <h1>Settings</h1>
+                    <div class="separator"></div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Site Control</h2>
+                            <p>Control The Website If There Is Maintenance</p>
+                            <div>
+                                <div>
+                                    <span>Website Control</span>
+                                    <p>Open/Close Website And Type The Reason</p>
+                                </div>
+                                <label>
+                                    <input class="toggle-checkbox" type="checkbox" checked>
+                                    <div class="toggle-switch"></div>
+                                </label>
+                            </div>
+                            <textarea name="close-reason" cols="30" rows="10" placeholder="Close Message Content"></textarea>    
+                        </div>
+                    </div>
+                    <div class="card general-info">
+                        <div class="card-body">
+                            <h2>General Info</h2>
+                            <p>General Information About Your Account</p>
+                            <form>
+                                <p>First Name</p>
+                                <input type="text" placeholder="First Name">
+                                <p>Last Name</p>
+                                <input type="text" placeholder="Last Name">
+                                <p>Email</p>
+                                <div>
+                                    <input type="text" value="flen@gmail.com" readonly>
+                                    <button>Change</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card security-info">
+                        <div class="card-body border-bottom">
+                            <h2>Security Info</h2>
+                            <p>Security Information About Your Account</p>
+                            <div>
+                                <div>
+                                    <span>Password</span>
+                                    <p>ast Change On 25/10/2022</p>
+                                </div>
+                                <a href="">Change</a>
+                            </div>
+                            <div>
+                                <div>
+                                    <span>Two-Factor Authentication</span>
+                                    <p>Enable/Disable The Feature</p>
+                                </div>
+                                <label>
+                                    <input class="toggle-checkbox" type="checkbox" checked>
+                                    <div class="toggle-switch"></div>
+                                </label>
+                            </div>
+                            <div>
+                                <div>
+                                    <span>Devices</span>
+                                    <p>Check The Login Devices List</p>
+                                </div>
+                                <a href="">Devices</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card social-info">
+                        <div class="card-body">
+                            <h2>Social Info</h2>
+                            <p>Social Media Information</p>
+                            <div>
+                                <i class="fa-brands fa-twitter"></i>
+                                <input type="text" placeholder="Twitter Username">
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-facebook"></i>
+                                <input type="text" placeholder="Facebook Username">
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <input type="text" placeholder="Linkedin Username">
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-youtube"></i>
+                                <input type="text" placeholder="Youtube Username">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card widget-control">
+                        <div class="card-body">
+                            <h2>Widgets Control</h2>
+                            <p>Show/Hide Widgets</p>
+                            <div>
+                                <input type="checkbox" checked>
+                                <span>Quick Draft</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Yearly Targets</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked>
+                                <span>Tickets Statistics</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Latest News</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"checked>
+                                <span>Latest Tasks</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked>
+                                <span>Top Search Items</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card backup-manager">
+                        <div class="card-body border-bottom">
+                            <h2>Backup Manager</h2>
+                            <p>Control backup Time And Location</p>
+                            <div class="backup-date">
+                                <div>
+                                    <input type="radio" id="daily" name="backup" value="daily">
+                                    <label for="daily">Daily</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="weekly" name="backup" value="weekly" checked>
+                                    <label for="weekly">Weekly</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="monthly" name="backup" value="monthly">
+                                    <label for="monthly">Monthly</label>
+                                </div>
+                            </div>
+                            <div class="backup-type">
+                                <div>
+                                    <input type="radio" name="backup-type" id="megaman" value="megaman">
+                                    <label for="megaman" class="rounded-border">
+                                        <i class="fa-solid fa-server"></i>
+                                        <span>Standart</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="backup-type" id="zero" value="zero" checked>
+                                    <label for="zero" class="rounded-border">
+                                        <i class="fa-solid fa-server"></i>
+                                        <span>Avanced</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="backup-type" id="sigma" value="sigma">
+                                    <label for="sigma" class="rounded-border">
+                                        <i class="fa-solid fa-server"></i>
+                                        <span>Expert</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

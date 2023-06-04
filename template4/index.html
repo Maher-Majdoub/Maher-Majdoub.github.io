@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="page">
+        <div class="sidebar">
+            <div class="logo">
+                <h3>Maher</h3>
+                <div class="separator"></div>
+            </div>
+            <div class="pages-links">
+                <ul>
+                    <li class="page-link checked">
+                        <a href="#">
+                            <i class="fa-solid fa-sliders"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="pages/settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="pages/profile.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="pages/projects.html">
+                            <i class="fa-solid fa-bars-progress"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="pages/courses.html">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="pages/friends.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+                    <li class="page-link">
+                        <a href="pages/plans.html">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="search rounded-border">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Type A Keyword">
+                </div>
+                <div class="status">
+                    <i class="fa-regular fa-bell"><span class="notify"></span></i>
+                    <img src="images/avatar.png" alt="">
+                </div>
+            </div>
+            <div class="body">
+                <div class="section-title">
+                    <h1>Dashboard</h1>
+                    <div class="separator"></div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-head">
+                            <div class="title">
+                                <h2>Welcome</h2>
+                                <p>Maher</p>
+                            </div>
+                            <img class="avatar" src="images/avatar.png" alt="">
+                            <img src="images/welcome.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="user-infos">
+                                <div>
+                                    <span>Maher Majdoub</span>
+                                    <p>Developer</p>
+                                </div>
+                                <div>
+                                    <span>80</span>
+                                    <p>Projects</p>
+                                </div>
+                                <div>
+                                    <span>$5000</span>
+                                    <p>Earned</p>
+                                </div>
+                            </div>
+                            <a href="pages/profile.html">Profile</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Quick Draft</h2>
+                            <p>Write A Draft For Your Ideas</p>
+                            <input type="text" placeholder="Title">
+                            <textarea cols="20" rows="10" placeholder="Your Thought"></textarea>
+                            <a href="#">Save</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Yearly Targets</h2>
+                            <p>Targets Of The Year</p>
+                            <div class="target">
+                                <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                <div>
+                                    <p>Money</p>
+                                    <h4>$20.000</h4>
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="target">
+                                <span><i class="fa-solid fa-code"></i></span>
+                                <div>
+                                    <p>Projects</p>
+                                    <h4>12</h4>
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <div class="target">
+                                <span><i class="fa-solid fa-user"></i></span>
+                                <div>
+                                    <p>Teams</p>
+                                    <h4>3</h4>
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Tickets Statistics</h2>
+                            <p>Everything About Support Tickets</p>
+                            <div class="stats">
+                                <div class="stat rounded-border">
+                                    <i class="fa-solid fa-list"></i>
+                                    <h3>2500</h3>
+                                    <p>Total</p>
+                                </div>
+                                <div class="stat rounded-border">
+                                    <i class="fa-solid fa-spinner"></i>
+                                    <h3>500</h3>
+                                    <p>Pending</p>
+                                </div>
+                                <div class="stat rounded-border">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <h3>1900</h3>
+                                    <p>Closed</p>
+                                </div>
+                                <div class="stat rounded-border">
+                                    <i class="fa-regular fa-circle-xmark"></i>
+                                    <h3>100</h3>
+                                    <p>Deleted</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body border-bottom">
+                            <h2>Latest News</h2>
+                            <div class="event">
+                                <img src="images/news-01.png" alt="">
+                                <div>
+                                    <span>Created SASS Section</span>
+                                    <p>New SASS Examples & Tutorials</p>
+                                </div>
+                                <p class="value">3 Days Ago</p>
+                            </div>
+                            <div class="event">
+                                <img src="images/news-02.png" alt="">
+                                <div>
+                                    <span>Changed The Design</span>
+                                    <p>A Brand New Website Design</p>
+                                </div>
+                                <p class="value">5 Days Ago</p>
+                            </div>
+                            <div class="event">
+                                <img src="images/news-03.png" alt="">
+                                <div>
+                                    <span>Team Increased</span>
+                                    <p>3 Developers Joined The Team</p>
+                                </div>
+                                <p class="value">7 Days Ago</p>
+                            </div>
+                            <div class="event">
+                                <img src="images/news-04.png" alt="">
+                                <div>
+                                    <span>Added Payment Gateway</span>
+                                    <p>Many New Payment Gateways Added</p>
+                                </div>
+                                <p class="value">9 Days Ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card latest-tasks">
+                        <div class="card-body border-bottom">
+                            <h2>Latest Tasks</h2>
+                            <div class="task">
+                                <div>
+                                    <span>Record One New Video</span>
+                                    <p>Record Python Create Exe Project</p>
+                                </div>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                            <div class="task finished">
+                                <div>
+                                    <span>Write Article</span>
+                                    <p>Write Low Level vs High Level Languages</p>
+                                </div>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                            <div class="task">
+                                <div>
+                                    <span>Finish Project</span>
+                                    <p>Publish Academy Programming Project</p>
+                                </div>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                            <div class="task">
+                                <div>
+                                    <span>Attend The Meeting</span>
+                                    <p>Attend The Project Business Analysis Meeting</p>
+                                </div>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                            <div class="task">
+                                <div>
+                                    <span>Finish Lesson</span>
+                                    <p>Finish Teaching Flex Box</p>
+                                </div>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card search-items">
+                        <div class="card-body">
+                            <h2>Top Search Items</h2>
+                            <div>
+                                <span>Programming</span>
+                                <p class="value">220</p>
+                            </div>
+                            <div>
+                                <span>JavaScript</span>
+                                <p class="value">190</p>
+                            </div>
+                            <div>
+                                <span>PHP</span>
+                                <p class="value">180</p>
+                            </div>
+                            <div>
+                                <span>Code</span>
+                                <p class="value">145</p>
+                            </div>
+                            <div>
+                                <span>Design</span>
+                                <p class="value">110</p>
+                            </div>
+                            <div>
+                                <span>Logic</span>
+                                <p class="value">42</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card updates">
+                        <div class="card-body border-bottom">
+                            <h2>Latest Uploads</h2>
+                            <div>
+                                <img src="images/pdf.svg" alt="">
+                                <div>
+                                    <span>file.pdf</span>
+                                    <p>Maher</p>
+                                </div>
+                                <p class="value">2.9mb</p>
+                            </div>
+                            <div>
+                                <img src="images/avi.svg" alt="">
+                                <div>
+                                    <span>my-video.avi</span>
+                                    <p>Maher</p>
+                                </div>
+                                <p class="value">8.9mb</p>
+                            </div>
+                            <div>
+                                <img src="images/psd.svg" alt="">
+                                <div>
+                                    <span>psd-file.psd</span>
+                                    <p>Admin</p>
+                                </div>
+                                <p class="value">1.9mb</p>
+                            </div>
+                            <div>
+                                <img src="images/dll.svg" alt="">
+                                <div>
+                                    <span>file.dll</span>
+                                    <p>Designer</p>
+                                </div>
+                                <p class="value">7.2mb</p>
+                            </div>
+                            <div>
+                                <img src="images/zip.svg" alt="">
+                                <div>
+                                    <span>game.zip</span>
+                                    <p>User</p>
+                                </div>
+                                <p class="value">6.1mb</p>
+                            </div>
+                            <div>
+                                <img src="images/eps.svg" alt="">
+                                <div>
+                                    <span>file.eps</span>
+                                    <p>Maher</p>
+                                </div>
+                                <p class="value">12.9mb</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card last-project">
+                        <div class="card-body">
+                            <h2>Last Project Progress</h2>
+                            <div>
+                                <span class="done"></span>
+                                <p>Got The Project</p>
+                            </div>
+                            <div>
+                                <span class="done"></span>
+                                <p>Start The Project</p>
+                            </div>
+                            <div>
+                                <span class="done"></span>
+                                <p>The Project About To Finish</p>
+                            </div>
+                            <div>
+                                <span class="current"></span>
+                                <p>Test The Project</p>
+                            </div>
+                            <div>
+                                <span></span>
+                                <p>Finish The Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card reminders">
+                        <div class="card-body">
+                            <h2>Reminders</h2>
+                            <div>
+                                <span class="blue"></span>
+                                <div>
+                                    <span>Check My Tasks List</span>
+                                    <p>28/5/2023 - 12:00 am</p>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="green"></span>
+                                <div>
+                                    <span>Check My Projects</span>
+                                    <p>27/5/2023 - 12:00 am</p>
+                                </div>
+                            </div>                                
+                            <div>
+                                <span class="orange"></span>
+                                <div>
+                                    <span>Check My Tasks Clients</span>
+                                    <p>26/5/2023 - 12:00 am</p>
+                                </div>
+                            </div>  
+                            <div>
+                                <span class="red"></span>
+                                <div>
+                                    <span>Finish The Development Workshopt</span>
+                                    <p>25/5/2023 - 12:00 am</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card latest-post">
+                        <div class="card-body border-bottom">
+                            <h2>Latest Post</h2>
+                            <div>
+                                <img class="avatar" src="images/avatar.png" alt="">
+                                <div>
+                                    <span>Maher Majdoub</span>
+                                    <p>About 5 Hours Ago</p>
+                                </div>
+                            </div>
+                            <div>
+                                <span>You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.</span>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="fa-sharp fa-regular fa-heart"></i>
+                                    <span>2.5K</span>
+                                </div>
+                                <div>
+                                    <span>5.6K</span>
+                                    <i class="fa-regular fa-comments"></i>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card social-stats">
+                        <div class="card-body">
+                            <h2>Social Media Stats</h2>
+                            <div>
+                                <span class="social-logo"><i class="fa-brands fa-twitter"></i></span>
+                                <span class="val">90k Followers</span>
+                                <a href="#" class="event">View</a>
+                            </div>
+                            <div>
+                                <span class="social-logo"><i class="fa-brands fa-facebook"></i></span>
+                                <span class="val">1M Like</span>
+                                <a href="#" class="event">View</a>
+                            </div>
+                            <div>
+                                <span class="social-logo"><i class="fa-brands fa-youtube"></i></span>
+                                <span class="val">2M Subs</span>
+                                <a href="#" class="event">View</a>
+                            </div>
+                            <div>
+                                <span class="social-logo"><i class="fa-brands fa-linkedin"></i></span>
+                                <span class="val">70k Followers</span>
+                                <a href="#" class="event">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
