@@ -1,18 +1,28 @@
 const openExKey = "6ec50d3ee2b045be8b799cef80c0f0ff";
-async function getData() {
-    let data = await fetch(
-      `https://openexchangerates.org/api/latest.json?app_id=${openExKey}`
-    ).then(() => {return data.json()}).catch((ex) => false);
-    ;
-}
+
 let data = {};
+
+async function getData() {
+    data = await fetch(
+      `https://openexchangerates.org/api/latest.json?app_id=${openExKey}`
+    );
+    if (data.status === 200) {
+      data = await data.json()
+    }
+    else {
+      data = false;
+    }
+}
+
 async function fillCbxs() {
-  data = await getData();
+  await getData();
+  console.log(data);
   if (!data) {
     document.body.innerHTML = `<h1>Something Went Wrong!</h1>
     <script src="js/main.js" type="module"></script>`;
     return false;
   }
+  
   const fromCbx = document.querySelector(".convert-from-div select");
   const toCbx = document.querySelector(".convert-to-div select");
   Object.keys(data.rates).forEach((key) => {
@@ -73,5 +83,4 @@ async function startListening() {
     ];
   };
 }
-
 startListening();
