@@ -1,7 +1,7 @@
 const openExKey = "6ec50d3ee2b045be8b799cef80c0f0ff";
 async function getData() {
     let data = await fetch(
-      `https://aopenexchangerates.org/api/latest.json?app_id=${openExKey}`
+      `https://openexchangerates.org/api/latest.json?app_id=${openExKey}`
     ).then(() => {return data.json()}).catch((ex) => false);
     ;
 }
