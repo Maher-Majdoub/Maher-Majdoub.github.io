@@ -16,7 +16,6 @@ async function getData() {
 
 async function fillCbxs() {
   await getData();
-  console.log(data);
   if (!data) {
     document.body.innerHTML = `<h1>Something Went Wrong!</h1>
     <script src="js/main.js" type="module"></script>`;
@@ -61,6 +60,8 @@ async function startListening() {
 
   fromCbx.value = '🇹🇳 TND';
   toCbx.value = '🇺🇸 USD';
+  fromInput.value = '1';
+  calc(fromInput, fromCbx, toInput, toCbx); 
 
   fromInput.addEventListener("input", () => {
     calc(fromInput, fromCbx, toInput, toCbx);
@@ -69,10 +70,12 @@ async function startListening() {
     calc(toInput, toCbx, fromInput, fromCbx);
   });
   fromCbx.onchange = () => {
-    calc(toInput, toCbx, fromInput, fromCbx);
+    fromInput.value = '1';
+    calc(fromInput, fromCbx, toInput, toCbx); 
   }
   toCbx.onchange = () => {
-    calc(fromInput, fromCbx, toInput, toCbx);    
+    toInput.value = '1'
+    calc(toInput, toCbx, fromInput, fromCbx);  
   }
   switchBtn.onclick = () => {
     [fromCbx.value, toCbx.value, fromInput.value, toInput.value] = [
