@@ -198,7 +198,7 @@ async function main(){
     }
     fillCurrentWeather();
     fillForecast();
-    document.querySelector('.weather-vid > video').play();
+    // document.querySelector('.weather-vid > video').play();
     let swiper = createNewSwipper();
     document.getElementById('forecast-filter').onchange = () => {
         fillForecast();
