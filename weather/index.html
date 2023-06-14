@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Weather</div>
+        <div class="location">
+            <div class="location-search">
+                <div class="search-area">
+                    <input type="search" id="country-input" placeholder="country">
+                    <ul id="country-auto-complete" class="auto-complete">
+                    </ul>
+                </div>
+                <div class="search-area">
+                    <input type="search" id="state-input" placeholder="state">
+                    <ul id="state-auto-complete" class="auto-complete">
+                    </ul>
+                </div>
+                <button id="get-location-btn"><i class="fa-solid fa-magnifying-glass-location"></i></button>    
+            </div>
+            <div>
+                <button id="detect-location-btn"><i class="fa-solid fa-location-crosshairs"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="todays-weather">
+            <div class="global-infos">
+                <div class="weather-vid">
+                    <video src="assets/images/rain.mp4" autoplay loop></video>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="main-temp">
+                            <img id="main-temp-img" class="global-weather-icon" alt="">
+                            <div class='main-temp-value'>
+                                <span id="main-temp-value">38</span>
+                                <span class="temp-symbol">°C</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="general-infos">
+                        <div class="weather-description">
+                            <i class="fa-solid fa-cloud-rain"></i>
+                            <p id="main-weather-desc" class="weater-description">Rainy storm clouds</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p id="location">Tunis, manouba</p>
+                        </div>
+                        <div class="date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p id="date">24 July 6:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="details">
+                <div class="today">
+                    <h2>Today's Highlight</h2>
+                    <div class="cards">
+                        <div class="card temp">
+                            <h5 class="title">Temperature</h5>
+                            <img class="icon" src="assets/icons/temp.png" alt="wind-icon">
+                            <div>
+                                <p>Low: <span id="low-temp-val" class="value">12°</span></p>
+                                <p>Hight: <span id="hight-temp-val" class="value">22°</span></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h5 class="title">Wind Status</h5>
+                            <img class="icon" src="assets/icons/wind.png" alt="wind-icon">
+                            <p><span class="value" id="wind-speed">7.90</span> km/h</p>
+                        </div>
+                        <div class="card sun">
+                            <h5 class="title">Rise & Set</h5>
+                            <img class="icon" src="assets/icons/sun.png" alt="wind-icon">
+                            <div>
+                                <div>
+                                    <img src="assets/icons/sunrise.png" alt="">
+                                    <p>Sunrise</p>
+                                    <span id="sunrise-value" class="val">5:02</span>
+                                </div>
+                                <div>
+                                    <img src="assets/icons/sunset.png" alt="">
+                                    <p>Sunset</p>
+                                    <span id="sunset-value" class="val">7:02</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h5 class="title">Humdity</h5>
+                            <img class="icon" src="assets/icons/humidity.png" alt="wind-icon">
+                            <p><span id="humidity-value" class="value">85</span> %</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="forecast">
+                    <div>
+                        <h2>Forecast</h2>
+                        <select name="forecast-filter" id="forecast-filter">
+                            <option value="Today">Today</option>
+                            <option value="Daily" selected>Daily</option>
+                            <option value="Hourly">Hourly</option>
+                        </select>
+                    </div>
+                    
+                    <div class="swiper">
+                        <div class="swiper-wrapper" id="forecast-wrapper">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/countries.js"></script>
+    <script src="js/location_hudler.js"></script>
+</body>
+</html>
