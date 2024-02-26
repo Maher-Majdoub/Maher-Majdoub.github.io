@@ -215,6 +215,7 @@ body {
     color: var(--color-6);
     padding: 2px 5px;
     text-align: center;
+    border-radius: 3px;
 }
 
 .story .user-name {
